@@ -21,14 +21,14 @@
 	>
 		<div class="lg:col-start-2 lg:pl-8">
 			<div class="text-base max-w-prose mx-auto lg:max-w-lg lg:ml-auto lg:mr-0">
-				<h2 class="leading-6 text-highlight-600 font-semibold tracking-wide uppercase">
+				<h2 class="leading-6 text-contrast-600 font-semibold tracking-wide uppercase">
 					{headline}
 				</h2>
 				<h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-main-900 sm:text-4xl">
 					{title}
 				</h3>
 				<p class="mt-8 text-lg text-main-500">{lede}</p>
-				<div class="mt-5 prose prose-highlight text-main-500">
+				<div class="mt-5 prose prose-contrast text-main-500">
 					<slot />
 				</div>
 			</div>
