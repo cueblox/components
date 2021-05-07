@@ -21,8 +21,8 @@
 						href={item.route}
 						sveltekit:prefetch
 						class="{item.route === $page.path
-							? 'border-cyan-500 text-gray-900'
-							: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+							? 'border-contrast-500 text-main-900'
+							: 'border-transparent text-main-500 hover:border-main-300 hover:text-main-700'} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
 					>
 						{item.name}
 					</a>
@@ -35,7 +35,7 @@
 				<div class="relative">
 					<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
 						<svg
-							class="h-5 w-5 text-gray-400"
+							class="h-5 w-5 text-main-400"
 							xmlns="http://www.w3.org/2000/svg"
 							viewBox="0 0 20 20"
 							fill="currentColor"
@@ -51,7 +51,7 @@
 					<input
 						id="search"
 						name="search"
-						class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+						class="block w-full pl-10 pr-3 py-2 border border-main-300 rounded-md leading-5 bg-white placeholder-main-500 focus:outline-none focus:placeholder-main-400 focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
 						placeholder="Search"
 						type="search"
 					/>
@@ -62,7 +62,7 @@
 			<!-- Mobile menu button -->
 			<button
 				type="button"
-				class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+				class="inline-flex items-center justify-center p-2 rounded-md text-main-400 hover:text-main-500 hover:bg-main-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 				aria-controls="mobile-menu"
 				aria-expanded="false"
 				on:click={handleOpen}
