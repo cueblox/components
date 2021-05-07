@@ -13,7 +13,7 @@
 	<div class="flex justify-between h-16">
 		<div class="flex px-2 lg:px-0">
 			<div class="flex-shrink-0 flex inline-flex items-center px-1 pt-1z text-sm font-medium">
-				<slot id="brand"></slot>	
+				<slot name="brand"></slot>	
 			</div>
 			<div class="hidden lg:ml-6 lg:flex lg:space-x-8">
 				{#each navigation as item}
