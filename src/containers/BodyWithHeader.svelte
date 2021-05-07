@@ -10,12 +10,12 @@
       class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl"
     >
       <h2
-        class="text-base font-semibold tracking-wider text-contrast-800 uppercase"
+        class="text-base font-semibold tracking-wider text-contrast-600 uppercase"
       >
         {title}
       </h2>
       <p
-        class="mt-2 text-3xl font-extrabold text-contrast-900 tracking-tight sm:text-4xl"
+        class="mt-2 text-3xl font-extrabold text-contrast-800 tracking-tight sm:text-4xl"
       >
         {heading}
       </p>

@@ -13,7 +13,7 @@
       <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
         <div>
           <h2 class="text-base text-contrast-600 font-semibold tracking-wide uppercase">{headline}</h2>
-          <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-main-900 sm:text-4xl">{title}</h3>
+          <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-contrast-800 sm:text-4xl">{title}</h3>
         </div>
       </div>
       <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">

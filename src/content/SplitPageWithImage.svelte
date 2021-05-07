@@ -24,7 +24,7 @@
 				<h2 class="leading-6 text-contrast-600 font-semibold tracking-wide uppercase">
 					{headline}
 				</h2>
-				<h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-main-900 sm:text-4xl">
+				<h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-contrast-800 sm:text-4xl">
 					{title}
 				</h3>
 				<p class="mt-8 text-lg text-main-500">{lede}</p>

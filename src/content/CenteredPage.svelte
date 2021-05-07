@@ -36,7 +36,7 @@
       <div class="text-lg max-w-prose mx-auto">
         <h1>
           <span class="block text-base text-center text-contrast-600 font-semibold tracking-wide uppercase">{headline}</span>
-          <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-main-900 sm:text-4xl">{title}</span>
+          <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-contrast-900 sm:text-4xl">{title}</span>
         </h1>
         <p class="mt-8 text-xl text-main-500 leading-8">{lede}</p>
       </div>
