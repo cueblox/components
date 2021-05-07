@@ -2,11 +2,8 @@
     import {page} from '$app/stores';
     export let navigation;
   
-    let open = false;
+    export let open;
    
-	function handleMessage(event) {
-		open =	event.detail.open;
-	}
   </script>
   
 
