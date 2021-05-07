@@ -8,6 +8,7 @@
 
 	export let navigation;
 
+	let open = false;
 
 	let triggerEl;
 
@@ -81,7 +82,7 @@
 			>
 				<span class="sr-only">Open main menu</span>
 				<svg
-					class="block h-6 w-6"
+					class="{open ? "hidden" : "block"} h-6 w-6"
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
@@ -96,7 +97,7 @@
 					/>
 				</svg>
 				<svg
-					class="hidden h-6 w-6"
+					class="{open ? "block" : "hidden"} h-6 w-6"
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
