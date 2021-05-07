@@ -5,6 +5,7 @@ import { default as CenteredPage } from './content/CenteredPage.svelte';
 import { default as PageContainer } from './containers/PageContainer.svelte';
 import { default as SimpleCard } from './cards/SimpleCard.svelte';
 import { default as SimpleCardGroup } from './containers/SimpleCardGroup.svelte';
+import { default as SplitPageWithImage } from './content/SplitPageWithImage.svelte';
 
 export { BodyWithHeader };
 export { PageContainer };
@@ -13,3 +14,4 @@ export { SimpleCard };
 export { CardGroup };
 export { SimpleCardGroup };
 export { CenteredPage };
+export { SplitPageWithImage };
