@@ -4,10 +4,9 @@
   
     let open = false;
    
-    function handleOpen(event){
-      open = !open;
-    }
-  
+	function handleMessage(event) {
+		open =	event.detail.open;
+	}
   </script>
   
 

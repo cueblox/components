@@ -1,11 +1,19 @@
 <script>
 	import { page } from '$app/stores';
+	import { createEventDispatcher } from 'svelte';
+
+	const dispatch = createEventDispatcher();
+
 	export let navigation;
 
 	let open = false;
 
-	function handleOpen(event) {
+	function toggleOpen() {
 		open = !open;
+		console.log("Firing", open)
+		dispatch('toggleopen', {
+			open: open
+		});
 	}
 </script>
 
@@ -65,7 +73,7 @@
 				class="inline-flex items-center justify-center p-2 rounded-md text-main-400 hover:text-main-500 hover:bg-main-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 				aria-controls="mobile-menu"
 				aria-expanded="false"
-				on:click={handleOpen}
+				on:click={toggleOpen}
 			>
 				<span class="sr-only">Open main menu</span>
 				<svg
