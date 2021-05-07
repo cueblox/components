@@ -20,17 +20,17 @@
         </a>
       </p>
       <a href="/articles/{article.id}" class="block mt-2">
-        <p class="text-xl font-semibold text-gray-900">
+        <p class="text-xl font-semibold text-main-900">
           {article.title}
         </p>
-        <p class="mt-3 text-base text-gray-500">
+        <p class="mt-3 text-base text-main-500">
           {article.excerpt}
         </p>
       </a>
     </div>
     <div class="mt-6 flex items-center">
       <div>
-        <div class="flex space-x-1 text-sm text-gray-500">
+        <div class="flex space-x-1 text-sm text-main-500">
           <time datetime="2020-03-10"> Mar 10, 2020 </time>
           <span aria-hidden="true"> &middot; </span>
           <span> 4 min read </span>
