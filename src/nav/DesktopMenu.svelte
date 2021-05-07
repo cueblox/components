@@ -8,15 +8,13 @@
 
 	export let navigation;
 
-	let open = false;
 
 	let triggerEl;
 
 	function toggleOpen() {
 		open = !open;
-		console.log("Firing", open)
 		dispatch('toggleopen', {
-			open: open
+			fired: true
 		});
 	}
 </script>
