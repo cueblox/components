@@ -2,8 +2,8 @@
 	export let headline;
 	export let title;
 	export let lede;
-	export let image_file_name;
-	export let image_alt;
+	export let imagefilename;
+	export let imagealt;
 </script>
 
 <div class="relative bg-white">
@@ -11,8 +11,8 @@
 		<div class="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
 			<img
 				class="h-56 w-full object-cover lg:absolute lg:h-full"
-				src={image_file_name}
-				alt={image_alt}
+				src={imagefilename}
+				alt={imagealt}
 			/>
 		</div>
 	</div>
