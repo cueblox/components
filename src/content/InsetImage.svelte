@@ -12,7 +12,7 @@
       <div class="hidden lg:block bg-main-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
       <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
         <div>
-          <h2 class="text-base text-highlight-600 font-semibold tracking-wide uppercase">{headline}</h2>
+          <h2 class="text-base text-contrast-600 font-semibold tracking-wide uppercase">{headline}</h2>
           <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-main-900 sm:text-4xl">{title}</h3>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <div class="text-base max-w-prose mx-auto lg:max-w-none">
             <p class="text-lg text-main-500">{lede}</p>
           </div>
-          <div class="mt-5 prose prose-highlight text-main-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+          <div class="mt-5 prose prose-contrast text-main-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
               <slot></slot>
           </div>
         </div>
