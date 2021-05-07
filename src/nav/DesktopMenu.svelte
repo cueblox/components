@@ -11,7 +11,16 @@
 	let open = false;
 
 	let triggerEl;
+	function toggleOutside() {
+		if(open){
+			dispatch('toggleopen', {
+			fired: true
+		});
+		open = !open;
 
+		}
+
+	}
 	function toggleOpen() {
 		open = !open;
 		dispatch('toggleopen', {
@@ -71,7 +80,7 @@
 		</div>
 		<div class="flex items-center lg:hidden">
 			<!-- Mobile menu button -->
-			<ClickOutside on:clickoutside={toggleOpen} exclude={[triggerEl]}>
+			<ClickOutside on:clickoutside={toggleOutside} exclude={[triggerEl]}>
 			<button
 				bind:this={triggerEl}
 				type="button"
