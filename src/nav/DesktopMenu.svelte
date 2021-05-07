@@ -1,12 +1,16 @@
 <script>
 	import { page } from '$app/stores';
 	import { createEventDispatcher } from 'svelte';
+	import ClickOutside from 'svelte-click-outside';
+
 
 	const dispatch = createEventDispatcher();
 
 	export let navigation;
 
 	let open = false;
+
+	let triggerEl;
 
 	function toggleOpen() {
 		open = !open;
@@ -68,7 +72,9 @@
 		</div>
 		<div class="flex items-center lg:hidden">
 			<!-- Mobile menu button -->
+			<ClickOutside on:clickoutside={toggleOpen} exclude={[triggerEl]}>
 			<button
+				bind:this={triggerEl}
 				type="button"
 				class="inline-flex items-center justify-center p-2 rounded-md text-main-400 hover:text-main-500 hover:bg-main-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
 				aria-controls="mobile-menu"
@@ -107,6 +113,7 @@
 					/>
 				</svg>
 			</button>
+		</ClickOutside>
 		</div>
 		<div class="hidden lg:ml-4 lg:flex lg:items-center" />
 	</div>
