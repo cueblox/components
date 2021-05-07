@@ -14,13 +14,13 @@
   </div>
   <div class="flex-1 bg-white p-6 flex flex-col justify-between">
     <div class="flex-1">
-      <p class="text-sm font-medium text-contrast-800">
+      <p class="text-sm font-medium text-contrast-600">
         <a href="/categories/{article.category_id}" class="hover:underline">
           {article.category && article.category.name}
         </a>
       </p>
       <a href="/articles/{article.id}" class="block mt-2">
-        <p class="text-xl font-semibold text-main-900">
+        <p class="text-xl font-semibold text-contrast-900">
           {article.title}
         </p>
         <p class="mt-3 text-base text-main-500">
