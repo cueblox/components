@@ -7,9 +7,9 @@
 
     function cardColor(color) {
 		return (
-			'flex-shrink-0 flex items-center justify-center w-16 ' +
+			'flex-shrink-0 flex items-center justify-center w-16 bg-' +
 			color +
-			' text-white text-sm font-medium rounded-l-md'
+			'-600 text-white text-sm font-medium rounded-l-md'
 		);
 	}
 </script>
