@@ -14,7 +14,7 @@
   </div>
   <div class="flex-1 bg-white p-6 flex flex-col justify-between">
     <div class="flex-1">
-      <p class="text-sm font-medium text-highlight-800">
+      <p class="text-sm font-medium text-contrast-800">
         <a href="/categories/{article.category_id}" class="hover:underline">
           {article.category && article.category.name}
         </a>
