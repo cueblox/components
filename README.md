@@ -9,7 +9,7 @@
 
 Define each of the above colors in your tailwind.config.cjs file:
 
-```
+```js
 const colors = require('tailwindcss/colors')
 
 module.exports = {
