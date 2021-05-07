@@ -52,7 +52,7 @@ Import and use in your app:
 
 ```html
 <script>
-	import ArticleCard from 'components';
+	import { ArticleCard } from 'components';
 	import { getArticle } from '$lib/dataStore';
 	import Header from '$lib/containers/Header.svelte';
 	export let title;
