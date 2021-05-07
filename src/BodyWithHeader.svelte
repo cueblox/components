@@ -1,0 +1,20 @@
+<script>
+	export let title;
+	export let heading;
+	export let description;
+</script>
+
+<div class="relative bg-bg-50 py-16 sm:py-24 lg:py-32">
+	<div class="relative">
+		<div class="text-center mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+			<h2 class="text-base font-semibold tracking-wider text-contrast-800 uppercase">{title}</h2>
+			<p class="mt-2 text-3xl font-extrabold text-main-900 tracking-tight sm:text-4xl">
+				{heading}
+			</p>
+			<p class="mt-5 mx-auto max-w-prose text-xl text-main-500">
+				{description}
+			</p>
+		</div>
+        <slot />
+	</div>
+</div>

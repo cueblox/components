@@ -4,6 +4,7 @@
 
 * contrast: contrasting headline color
 * main: normal text color (probably gray!)
+* bg: primary background color
 
 ## Using
 
