@@ -1,0 +1,55 @@
+<script>
+
+  export let article;
+  export let category;
+  export let profile;
+  export let avatar;
+
+  function pillColor(color) {
+		return (
+			'inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-' + 
+      color + '-100 text-' + 
+      color + '-800 ' 
+		);
+	}
+</script>
+
+<div>
+	<div>
+		<a href="/categories/{category.id}" class="inline-block">
+			<span
+				class="{pillColor(category.color)}"
+			>
+				{category.name}
+			</span>
+		</a>
+	</div>
+	<a href="/articles/{article.id}" class="block mt-4">
+		<p class="text-xl font-semibold text-main-900">{article.title}</p>
+		<p class="mt-3 text-base text-gray-500">
+			{article.excerpt}
+		</p>
+	</a>
+	<div class="mt-6 flex items-center">
+		<div class="flex-shrink-0">
+			<a href="/profiles/{profile.id}">
+				<span class="sr-only">{profile.first_name} {profile.last_name}</span>
+				<img
+					class="h-10 w-10 rounded-full"
+					src="/{avatar.filename}"
+					alt="{profile.first_name} {profile.last_name}"
+				/>
+			</a>
+		</div>
+		<div class="ml-3">
+			<p class="text-sm font-medium text-main-900">
+				<a href="/profiles/{profile.id}"> {profile.first_name} {profile.last_name} </a>
+			</p>
+			<div class="flex space-x-1 text-sm text-main-500">
+				<time datetime="{article.publish_date}"> Mar 16, 2020 </time>
+				<span aria-hidden="true"> &middot; </span>
+				<span> 6 min read </span>
+			</div>
+		</div>
+	</div>
+</div>
