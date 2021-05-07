@@ -1,7 +1,7 @@
-import { default as ArticleCard } from './ArticleCard.svelte';
-import { default as BodyWithHeader } from './BodyWithHeader.svelte';
-import { default as PageContainer } from './PageContainer.svelte';
+import { default as ArticleCard } from './cards/ArticleCard.svelte';
+import { default as BodyWithHeader } from './containers/BodyWithHeader.svelte';
+import { default as PageContainer } from './containers/PageContainer.svelte';
 
-export { ArticleCard };
 export { BodyWithHeader };
 export { PageContainer };
+export { ArticleCard };
