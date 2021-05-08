@@ -7,29 +7,29 @@
 
     const colorMap = {
 	  "red": {
-		  "bg": "bg-red-600"
+		  "bg": "bg-red-100"
 	  },
 	  "purple": {
-		  "bg": "bg-purple-600"
+		  "bg": "bg-purple-100"
 	  },
 	  "blue": {
-		  "bg": "bg-blue-600"
+		  "bg": "bg-blue-100"
 	  },
 	  "lime": {
-		  "bg": "bg-lime-600"
+		  "bg": "bg-lime-100"
 	  },
 	  "amber": {
-		  "bg": "bg-amber-600"
+		  "bg": "bg-amber-100"
 	  },
 	  "orange": {
-		  "bg": "bg-orange-600"
+		  "bg": "bg-orange-100"
 	  },
 	  "teal": {
-		  "bg": "bg-teal-600"
+		  "bg": "bg-teal-100"
 
 	  },
 	  "bluegray": {
-		  "bg": "bg-bluegray-600"
+		  "bg": "bg-bluegray-100"
 
 	  },
   }
