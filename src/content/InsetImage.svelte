@@ -4,7 +4,7 @@
 	export let lede;
 	export let image;
 	export let imagealt;
-    export let caption;
+  export let caption;
 </script>
 
 <div class="bg-white overflow-hidden">

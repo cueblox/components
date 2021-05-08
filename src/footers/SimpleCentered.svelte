@@ -1,5 +1,6 @@
 <script>
 	export let navigation;
+    export let profile;
 </script>
 
 <footer class="bg-white">

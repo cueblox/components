@@ -3,23 +3,19 @@
 	import { createEventDispatcher } from 'svelte';
 	import ClickOutside from 'svelte-click-outside';
 
-
 	const dispatch = createEventDispatcher();
 
 	export let navigation;
-
 	let open = false;
-
 	let triggerEl;
+
 	function toggleOutside() {
-		if(open){
+		if (open) {
 			dispatch('toggleopen', {
-			fired: true
-		});
-		open = !open;
-
+				fired: true
+			});
+			open = !open;
 		}
-
 	}
 	function toggleOpen() {
 		open = !open;
@@ -33,7 +29,7 @@
 	<div class="flex justify-between h-16">
 		<div class="flex px-2 lg:px-0">
 			<div class="flex-shrink-0 flex inline-flex items-center px-1 pt-1z text-sm font-medium">
-				<slot name="brand"></slot>	
+				<slot name="brand" />
 			</div>
 			<div class="hidden lg:ml-6 lg:flex lg:space-x-8">
 				{#each navigation as item}
@@ -81,47 +77,47 @@
 		<div class="flex items-center lg:hidden">
 			<!-- Mobile menu button -->
 			<ClickOutside on:clickoutside={toggleOutside} exclude={[triggerEl]}>
-			<button
-				bind:this={triggerEl}
-				type="button"
-				class="inline-flex items-center justify-center p-2 rounded-md text-main-400 hover:text-main-500 hover:bg-main-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-				aria-controls="mobile-menu"
-				aria-expanded="false"
-				on:click={toggleOpen}
-			>
-				<span class="sr-only">Open main menu</span>
-				<svg
-					class="{open ? "hidden" : "block"} h-6 w-6"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-					aria-hidden="true"
+				<button
+					bind:this={triggerEl}
+					type="button"
+					class="inline-flex items-center justify-center p-2 rounded-md text-main-400 hover:text-main-500 hover:bg-main-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+					aria-controls="mobile-menu"
+					aria-expanded="false"
+					on:click={toggleOpen}
 				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M4 6h16M4 12h16M4 18h16"
-					/>
-				</svg>
-				<svg
-					class="{open ? "block" : "hidden"} h-6 w-6"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-					aria-hidden="true"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M6 18L18 6M6 6l12 12"
-					/>
-				</svg>
-			</button>
-		</ClickOutside>
+					<span class="sr-only">Open main menu</span>
+					<svg
+						class="{open ? 'hidden' : 'block'} h-6 w-6"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						aria-hidden="true"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
+					<svg
+						class="{open ? 'block' : 'hidden'} h-6 w-6"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						aria-hidden="true"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M6 18L18 6M6 6l12 12"
+						/>
+					</svg>
+				</button>
+			</ClickOutside>
 		</div>
 		<div class="hidden lg:ml-4 lg:flex lg:items-center" />
 	</div>
