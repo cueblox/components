@@ -36,7 +36,7 @@
 				<span class="sr-only">{profile.first_name} {profile.last_name}</span>
 				<img
 					class="h-10 w-10 rounded-full"
-					src="/{avatar.filename}"
+					src="/{avatar.file_name}"
 					alt="{profile.first_name} {profile.last_name}"
 				/>
 			</a>
