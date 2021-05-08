@@ -1,0 +1,4 @@
+<div class="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+    <slot />
+</div>
+

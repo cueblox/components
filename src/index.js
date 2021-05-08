@@ -2,6 +2,7 @@ import { default as ArticleCard } from './cards/ArticleCard.svelte';
 import { default as BodyWithHeader } from './containers/BodyWithHeader.svelte';
 import { default as BodyWithoutHeader } from './containers/BodyWithoutHeader.svelte';
 import { default as BorderlessCard } from './cards/BorderlessCard.svelte';
+import { default as BorderlessCardGroup } from './containers/BorderlessCardGroup.svelte';
 import { default as CardGroup } from './containers/CardGroup.svelte';
 import { default as CenteredPage } from './content/CenteredPage.svelte';
 import { default as DesktopMenu } from './nav/DesktopMenu.svelte';
@@ -21,6 +22,8 @@ export { ArticleCard };
 export { BorderlessCard };
 export { SimpleCard };
 export { CardGroup };
+export { BorderlessCardGroup };
+
 export { SimpleCardGroup };
 export { CenteredPage };
 export { SplitPageWithImage };
