@@ -12,6 +12,7 @@ import { default as NavBar } from './nav/NavBar.svelte';
 import { default as PageContainer } from './containers/PageContainer.svelte';
 import { default as SimpleCard } from './cards/SimpleCard.svelte';
 import { default as SimpleCardGroup } from './containers/SimpleCardGroup.svelte';
+import { default as SimpleCentered } from './footers/SimpleCentered.svelte';
 import { default as SimpleHeader } from './headers/Simple.svelte';
 import { default as SplitPageWithImage } from './content/SplitPageWithImage.svelte';
 
@@ -23,7 +24,7 @@ export { BorderlessCard };
 export { SimpleCard };
 export { CardGroup };
 export { BorderlessCardGroup };
-
+export { SimpleCentered };
 export { SimpleCardGroup };
 export { CenteredPage };
 export { SplitPageWithImage };
