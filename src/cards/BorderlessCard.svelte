@@ -43,7 +43,7 @@
   function pillColor(color) {
 		return (
 			'inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium ' + 
-      colorMap([color][bg]) + ' ' + colorMap([color][text])
+      colorMap([color]["bg"]) + ' ' + colorMap([color]["text"])
 		);
 	}
 </script>
