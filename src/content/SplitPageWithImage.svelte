@@ -11,7 +11,7 @@
 		<div class="lg:absolute lg:inset-y-0 lg:left-0 lg:w-1/2">
 			<img
 				class="h-56 w-full object-cover lg:absolute lg:h-full"
-				src="{image.file_name}"
+				src="/{image.file_name}"
 				alt="{image.alt}"
 			/>
 		</div>
