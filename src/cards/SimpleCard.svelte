@@ -7,30 +7,36 @@
 
     const colorMap = {
 	  "red": {
-		  "bg": "bg-red-100"
+		  "bg": "bg-red-100",
+		  "text": "text-red-800"
 	  },
 	  "purple": {
-		  "bg": "bg-purple-100"
+		  "bg": "bg-purple-100",
+		  "text": "text-purple-800"
 	  },
 	  "blue": {
-		  "bg": "bg-blue-100"
+		  "bg": "bg-blue-100",
+		  "text": "text-blue-800"
 	  },
 	  "lime": {
-		  "bg": "bg-lime-100"
+		  "bg": "bg-lime-100",
+		  "text": "text-lime-800"
 	  },
 	  "amber": {
-		  "bg": "bg-amber-100"
+		  "bg": "bg-amber-100",
+		  "text": "text-amber-800"
 	  },
 	  "orange": {
-		  "bg": "bg-orange-100"
+		  "bg": "bg-orange-100",
+		  "text": "text-orange-800"
 	  },
 	  "teal": {
-		  "bg": "bg-teal-100"
-
+		  "bg": "bg-teal-100",
+		  "text": "text-teal-800"
 	  },
 	  "bluegray": {
-		  "bg": "bg-bluegray-100"
-
+		  "bg": "bg-bluegray-100",
+		  "text": "text-bluegray-800"
 	  },
   }
 
@@ -39,7 +45,7 @@
 		return (
 			'flex-shrink-0 flex items-center justify-center w-16 ' +
 			colorMap[color]["bg"] +
-			' text-white text-sm font-medium rounded-l-md'
+			' ' + colorMap[color]["text"]  + ' text-sm font-medium rounded-l-md'
 		);
 	}
 </script>
