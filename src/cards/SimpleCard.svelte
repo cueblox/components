@@ -23,18 +23,18 @@
 	}
 </script>
 
-<li class="col-span-1 flex shadow-sm rounded-md">
+<li class="flex col-span-1 shadow-sm rounded-md">
     <div class={cardColor(color)}>
         {title.charAt(0)}
     </div>
     <div
-        class="flex-1 flex items-center justify-between border-t border-r border-b border-bg-200 bg-white rounded-r-md truncate"
+        class="flex items-center justify-between flex-1 truncate bg-white border-t border-b border-r border-bg-200 rounded-r-md"
     >
         <div class="flex-1 px-4 py-2 text-sm truncate">
             <a
                 sveltekit:prefetch
                 href="{link}"
-                class="text-main-900 font-medium hover:text-main-600">{title}</a
+                class="font-medium text-main-900 hover:text-main-600">{title}</a
             >
             <p class="text-main-500">{description}</p>
         </div>

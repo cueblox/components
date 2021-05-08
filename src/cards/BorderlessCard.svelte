@@ -30,12 +30,12 @@
 			{article.excerpt}
 		</p>
 	</a>
-	<div class="mt-6 flex items-center">
+	<div class="flex items-center mt-6">
 		<div class="flex-shrink-0">
 			<a href="/profiles/{profile.id}">
 				<span class="sr-only">{profile.first_name} {profile.last_name}</span>
 				<img
-					class="h-10 w-10 rounded-full"
+					class="w-10 h-10 rounded-full"
 					src="/{avatar.file_name}"
 					alt="{profile.first_name} {profile.last_name}"
 				/>
@@ -45,7 +45,7 @@
 			<p class="text-sm font-medium text-main-900">
 				<a href="/profiles/{profile.id}"> {profile.first_name} {profile.last_name} </a>
 			</p>
-			<div class="flex space-x-1 text-sm text-main-500">
+			<div class="flex text-sm space-x-1 text-main-500">
 				<time datetime="{article.publish_date}"> Mar 16, 2020 </time>
 				<span aria-hidden="true"> &middot; </span>
 				<span> 6 min read </span>

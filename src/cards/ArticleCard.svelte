@@ -2,17 +2,17 @@
   export let article;
 </script>
 
-<div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
   <div class="flex-shrink-0">
     <img
-      class="h-48 w-full object-cover"
+      class="object-cover w-full h-48"
       src="/{article.image.file_name}"
       alt={article.title}
       width={article.image.width}
       height={article.image.height}
     />
   </div>
-  <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+  <div class="flex flex-col justify-between flex-1 p-6 bg-white">
     <div class="flex-1">
       <p class="text-sm font-medium text-contrast-600">
         <a href="/categories/{article.category_id}" class="hover:underline">
@@ -28,9 +28,9 @@
         </p>
       </a>
     </div>
-    <div class="mt-6 flex items-center">
+    <div class="flex items-center mt-6">
       <div>
-        <div class="flex space-x-1 text-sm text-main-500">
+        <div class="flex text-sm space-x-1 text-main-500">
           <time datetime="2020-03-10"> Mar 10, 2020 </time>
           <span aria-hidden="true"> &middot; </span>
           <span> 4 min read </span>
