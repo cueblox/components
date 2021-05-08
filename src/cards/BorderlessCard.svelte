@@ -5,11 +5,45 @@
   export let profile;
   export let avatar;
 
+  const colorMap = {
+	  "red": {
+		  "bg": "bg-red-100",
+		  "text": "text-red-800"
+	  },
+	  "purple": {
+		  "bg": "bg-purple-100",
+		  "text": "text-purple-800"
+	  },
+	  "blue": {
+		  "bg": "bg-blue-100",
+		  "text": "text-blue-800"
+	  },
+	  "lime": {
+		  "bg": "bg-lime-100",
+		  "text": "text-lime-800"
+	  },
+	  "amber": {
+		  "bg": "bg-amber-100",
+		  "text": "text-amber-800"
+	  },
+	  "orange": {
+		  "bg": "bg-orange-100",
+		  "text": "text-orange-800"
+	  },
+	  "teal": {
+		  "bg": "bg-teal-100",
+		  "text": "text-teal-800"
+	  },
+	  "bluegray": {
+		  "bg": "bg-bluegray-100",
+		  "text": "text-bluegray-800"
+	  },
+  }
+
   function pillColor(color) {
 		return (
-			'inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-' + 
-      color + '-100 text-' + 
-      color + '-800 ' 
+			'inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium ' + 
+      colorMap([color][bg]) + ' ' + colorMap([color][text])
 		);
 	}
 </script>
@@ -45,7 +79,7 @@
 			<p class="text-sm font-medium text-main-900">
 				<a href="/profiles/{profile.id}"> {profile.first_name} {profile.last_name} </a>
 			</p>
-			<div class="flex text-sm space-x-1 text-main-500">
+			<div class="flex space-x-1 text-sm text-main-500">
 				<time datetime="{article.publish_date}"> Mar 16, 2020 </time>
 				<span aria-hidden="true"> &middot; </span>
 				<span> 6 min read </span>
