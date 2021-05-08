@@ -3,7 +3,16 @@
     export let title;
     export let description;
     export let link;
-
+    
+    const keeprs = [
+        'bg-teal-600',
+		'bg-purple-600',
+		'bg-lime-600',
+		'bg-amber-600',
+		'bg-orange-600',
+		'bg-red-600',
+		'bg-bluegray-600',
+    ]
 
     function cardColor(color) {
 		return (
