@@ -5,7 +5,6 @@
 <footer class="bg-white">
 	<div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
 		<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
->
 			{#each navigation as item}
 				<div class="px-5 py-2">
 					<a href="{item.route}" class="text-base text-main-500 hover:text-main-900"> 
@@ -13,8 +12,6 @@
                     </a>
 				</div>
 			{/each}
-
-
 		</nav>
 		<div class="mt-8 flex justify-center space-x-6">
 			<a href="#" class="text-main-400 hover:text-main-500">
