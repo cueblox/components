@@ -6,11 +6,28 @@
 - main: normal text color (probably gray!)
 - bg: primary background color
 
+the following colors must be defined in your taiwlind.config.\*js file:
+
+```javascript
+	theme: {
+		extend: {
+			colors: {
+				main: colors.gray,
+				bg: colors.gray,
+				contrast: colors.cyan,
+			}
+		}
+	},
+```
+
+choose your own color options, as long as `main`, `bg`, `contrast` are defined. See full palette
+here: [tailwind colors](https://tailwindcss.com/docs/customizing-colors#color-palette-reference).
+
 ## Using
 
 Add this package to your package.json file:
 
-```
+```bash
   "dependencies": {
     ...
     "components": "github:cueblox/components",
@@ -20,33 +37,16 @@ Add this package to your package.json file:
 
 Install it with your favorite package manager:
 
-```
+```bash
 pnpm i
 ```
 
 Refresh it when you want to get updates:
 
-```
+```bash
 pnpm update components
 ```
 
-Define each of the above colors in your tailwind.config.cjs file:
-
-```js
-const colors = require('tailwindcss/colors');
-
-module.exports = {
-	theme: {
-		extend: {
-			colors: {
-				contrast: colors.red,
-				main: colors.gray,
-				...etc
-			}
-		}
-	}
-};
-```
 
 Import and use in your app:
 
@@ -54,7 +54,6 @@ Import and use in your app:
 <script>
 	import { ArticleCard } from 'components';
 	import { getArticle } from '$lib/dataStore';
-	import Header from '$lib/containers/Header.svelte';
 	export let title;
 	export let heading;
 	export let description;
@@ -71,3 +70,19 @@ Import and use in your app:
 	</div>
 </header>
 ```
+
+Add this component's source files to your postcss purge config:
+
+```
+	purge: {
+		content: [
+			'./src/**/*.{html,js,svelte,ts}',
+			'./node_modules/components/**/*.{html,js,svelte,ts}',
+		],
+```
+
+This will prevent tailwind from purging styles it can't find in your project, but that exist in these components.
+
+## TODO
+
+There must be a more appropriate way to do this in tailwind using plugins or something?
