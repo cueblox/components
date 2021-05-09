@@ -6,7 +6,9 @@ import { default as BorderlessCardGroup } from './containers/BorderlessCardGroup
 import { default as CardGroup } from './containers/CardGroup.svelte';
 import { default as CenteredPage } from './content/CenteredPage.svelte';
 import { default as DesktopMenu } from './nav/DesktopMenu.svelte';
+import { default as Image } from './util/Image.svelte';
 import { default as InsetImage } from './content/InsetImage.svelte';
+import { default as Link } from './util/Link.svelte';
 import { default as MobileMenu } from './nav/MobileMenu.svelte';
 import { default as NavBar } from './nav/NavBar.svelte';
 import { default as PageContainer } from './containers/PageContainer.svelte';
@@ -33,3 +35,5 @@ export { NavBar };
 export { DesktopMenu };
 export { MobileMenu };
 export { SimpleHeader };
+export { Link };
+export { Image };
