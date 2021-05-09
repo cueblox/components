@@ -1,4 +1,5 @@
 <script>
+  import Image from '../util/Image.svelte';
 	export let headline;
 	export let title;
 	export let lede;
@@ -28,7 +29,7 @@
           <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
             <figure>
               <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-                <img class="object-cover object-center rounded-lg shadow-lg" src="{image.file_name}" alt="{image.alt}" width="{image.width}" height="{image.height}">
+                <Image class="object-cover object-center rounded-lg shadow-lg" src="{image.file_name}" alt="{image.alt}" width="{image.width}" height="{image.height}" />
               </div>
               <figcaption class="flex mt-3 text-sm text-main-500">
                 <!-- Heroicon name: solid/camera -->

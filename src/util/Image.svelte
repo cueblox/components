@@ -4,8 +4,10 @@
 
     export let src
     export let alt = 'Alt'
+    export let width
+    export let height
 
-    $: path = 'images/' + src
+    $: path = src
     $: extension = path.split('.').pop()
     $: pathWithoutExtension = path.substr(0, path.length - extension.length)
 </script>
@@ -17,5 +19,7 @@
         src={path}
         {alt}
         class="{_class}"
+        width={width}
+        height={height}
     >
 </picture>
