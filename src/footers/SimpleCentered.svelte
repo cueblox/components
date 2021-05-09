@@ -1,5 +1,5 @@
 <script>
-	import SocialLink from '..social/SocialLink.svelte';
+	import SocialLink from '../social/SocialLink.svelte';
 
 	export let navigation;
 	export let profile;
