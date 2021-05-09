@@ -12,7 +12,7 @@
 			<img
 				class="object-cover w-full h-56 lg:absolute lg:h-full"
 				src="/{image.file_name}"
-				alt="{image.alt}"
+				alt="{image.alt ? image.alt : title}"
 			/>
 		</div>
 	</div>
