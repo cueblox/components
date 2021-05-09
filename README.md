@@ -47,6 +47,14 @@ Refresh it when you want to get updates:
 pnpm update components
 ```
 
+add these tailwind plugins:
+
+```javascript
+require('@tailwindcss/typography'),
+require('@tailwindcss/forms'),
+require('@tailwindcss/aspect-ratio'),
+```
+
 
 Import and use in your app:
 
