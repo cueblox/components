@@ -7,7 +7,7 @@
     export let width
     export let height
 
-    $: path = src
+    $: path = '/optimized/' + src
     $: extension = path.split('.').pop()
     $: pathWithoutExtension = path.substr(0, path.length - extension.length)
 </script>
