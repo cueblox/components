@@ -1,9 +1,10 @@
 <script>
-  import Image from '../util/Image.svelte';
+  import SharpImage from '../util/SharpImage.svelte';
 	export let headline;
 	export let title;
 	export let lede;
 	export let image;
+  export let baseurl;
 
 </script>
 
@@ -13,7 +14,7 @@
       <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
         <div>
           <h2 class="text-base font-semibold tracking-wide uppercase text-contrast-600">{headline}</h2>
-          <h3 class="mt-2 text-3xl font-extrabold tracking-tight leading-8 text-contrast-800 sm:text-4xl">{title}</h3>
+          <h3 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-contrast-800 sm:text-4xl">{title}</h3>
         </div>
       </div>
       <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -29,7 +30,7 @@
           <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
             <figure>
               <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-                <Image class="object-cover object-center rounded-lg shadow-lg" src="{image.file_name}" alt="{image.alt}" width="{image.width}" height="{image.height}" />
+                <SharpImage class="object-cover object-center rounded-lg shadow-lg" {baseurl} src="{image.file_name}" alt="{image.alt}" width="{image.width}" height="{image.height}" />
               </div>
               <figcaption class="flex mt-3 text-sm text-main-500">
                 <!-- Heroicon name: solid/camera -->
