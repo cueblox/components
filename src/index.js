@@ -1,3 +1,5 @@
+import 'globals.css';
+
 import { default as ArticleCard } from './cards/ArticleCard.svelte';
 import { default as BodyWithHeader } from './containers/BodyWithHeader.svelte';
 import { default as BodyWithoutHeader } from './containers/BodyWithoutHeader.svelte';
