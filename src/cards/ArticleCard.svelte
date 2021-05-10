@@ -1,5 +1,8 @@
 <script>
+    import SharpImage from '../util/SharpImage.svelte';
+
   export let article;
+  const baseurl = 'https://bkapi.vercel.app/api/'
 
   const colorMap = {
 	  "red": {
@@ -46,13 +49,13 @@
 
 <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
   <div class="flex-shrink-0">
-    <img
-      class="object-cover w-full h-48"
-      src="/{article.image.file_name}"
-      alt={article.title}
-      width={article.image.width}
-      height={article.image.height}
-    />
+    <SharpImage 
+    class="object-cover w-full h-48"
+    {baseurl} 
+    src="{article.image.file_name}" 
+    alt="{article.image.alt}" 
+    width="{article.image.width}" 
+    height="{article.image.height}" />
   </div>
   <div class="flex flex-col justify-between flex-1 p-6 bg-white">
     <div class="flex-1">
