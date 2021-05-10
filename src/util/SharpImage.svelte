@@ -25,7 +25,7 @@
     <source type="image/png" srcset={png}>
 
     <img 
-        src={src}
+        src={baseurl + src}
         {alt}
         class="{_class}"
         width={width}
