@@ -23,9 +23,3 @@
 		description: 'My Description'
 	}}
 />
-
-<style global lang="postcss">
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-</style>
